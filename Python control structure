@@ -1,0 +1,22 @@
+money=4000
+flight =300
+train=200
+bus=200
+print("mumbai to chennai")
+print("money: ",money)
+print("flight cost: ",flight)
+print("train cost: ",train)
+print("bus cost: ",bus)
+
+if money>=flight or money>=train or money>=bus:
+    print("Eligible for Happy Journey")
+    print("suggesting cheapeast coast to travel:")
+    if flight<=train and flight <=bus:
+        print("flight")
+    elif train<=flight and train<=bus:
+        print("TRAIN")
+    else:
+        print("bus")
+
+else:
+    print("Money is insufficient, better try later")
