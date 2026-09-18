@@ -1,0 +1,10 @@
+message="your coupon code zomt30"
+
+if "zomt" in message:
+    print("discount applied")
+    if "zomt30" in message:
+        print("30% discount applied")
+    elif "zomt50" in message:
+        print("50% discount applied")
+else:
+    print("no discount")
