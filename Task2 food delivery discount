@@ -1,18 +1,18 @@
 min_cart_value=600
 max_discount=100
-cart_amount=2000
+cart_amount=3000
 discount_amount=(cart_amount*10)/100
 #print(discount_amount)
-if cart_amount>min_cart_value:
+if cart_amount>=min_cart_value:
     print("Promotional Discount applied")
     if discount_amount>max_discount:
         print("Cart amount:",cart_amount,"Rs.")
-        print("Applying flat discount of",max_discount,"Rs")
+        print("Applying flat discount of",max_discount,"Rs.")
         print("Final amount after discounted to pay:",
         (cart_amount-max_discount),"Rs")
-    else:
+    elif discount_amount<max_discount:
         print("Cart amount:",cart_amount,"Rs.")
-        print("10% discounted amount is",discount_amount,"Rs")
+        print("10% discounted amount is",discount_amount,"Rs.")
         print("Final amount after discounted to pay:",
         (cart_amount-discount_amount),"Rs.")
 else:
